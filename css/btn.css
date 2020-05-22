@@ -1,0 +1,14 @@
+/*--------------
+btn
+--------------*/
+.btn {
+  display: block;
+  margin: auto;
+  padding: 0;
+  border: 0;
+}
+
+.btn--primary {
+  width: 180px;
+  height: 60px;
+}

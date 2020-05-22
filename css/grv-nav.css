@@ -1,0 +1,48 @@
+/*--------------
+grv-nav
+--------------*/
+@media (max-width: 480px) {
+  .grv-nav {
+    display: none;
+  }
+}
+
+.grv-nav ul {
+  display: table;
+  margin: auto;
+  border-collapse: separate;
+  border-spacing: 1.5em 0;
+}
+
+.grv-nav li {
+  display: table-cell;
+  text-align-last: center;
+  width: 10em;
+  padding: 1em;
+}
+
+.grv-nav a {
+  display: block;
+  position: relative;
+  margin: -1em;
+  padding: 1em;
+  border-bottom: 2px solid #fff;
+  transition: .6s;
+}
+
+.grv-nav a::before {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  background: #000;
+  width: 100%;
+  height: 2px;
+  content: "";
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.grv-nav a:hover::before {
+  transform: scaleX(1);
+}

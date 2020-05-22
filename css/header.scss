@@ -1,0 +1,81 @@
+@import "media.scss";
+
+/*--------------
+header
+--------------*/
+.header__ttl{
+  text-align: center;
+  margin-top: .5em;
+  @include tab {
+    margin-top: 1em;
+  }
+  @include sp {
+    font-size: 4.8rem !important;
+  }
+}
+
+.header__sub-ttl{
+  text-align: center;
+  @include sp {
+    margin: 1em;
+  }
+}
+
+.header__img{
+  width: 100%;
+  height: 150px;
+}
+
+.hamburger {
+  display: none;
+  z-index: 20;
+  position: fixed;
+  top: 1.5em;
+  right: 1.5em;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: .4s ease-out;
+  @include tab {
+    display : block;
+  }
+  &--open {
+    .line--top {
+      top:20px;
+      z-index: 30;
+      transform: rotate(-45deg);
+    }
+    .line--center {
+      top:0px;
+      background: #fff;
+      width:100%;
+      height:100%;
+      border: 2px solid #333;
+      border-radius: 50%;
+      transform: scale(1.3);
+    }
+    .line--bottom {
+      top:20px;
+      z-index: 30;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.line {
+  position: absolute;
+  left:0;
+  background: #333;
+  width:100%;
+  height:2px;
+  transition: .6s ease-out;
+  &--top {
+    top:3px;
+  }
+  &--center {
+    top:17px;
+  }
+  &--bottom {
+    top:31px;
+  }
+}

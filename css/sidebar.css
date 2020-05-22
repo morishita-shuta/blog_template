@@ -1,0 +1,20 @@
+/* sidebar */
+.sidebar {
+  width: 25%;
+  padding: 2em 1em;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.sidebar__item {
+  margin-bottom: 4em;
+}
+
+.sidebar__item-ttl {
+  border-bottom: solid 1px #000;
+  margin-bottom: 1em;
+}

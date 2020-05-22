@@ -1,0 +1,64 @@
+/*--------------
+contact
+--------------*/
+.contact__form {
+  background: #fff;
+  width: 60%;
+  margin: auto;
+  padding: 2em;
+}
+
+@media (max-width: 480px) {
+  .contact__form {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.contact__ttl {
+  text-align: center;
+}
+
+.contact__table {
+  width: 100%;
+}
+
+.contact__table tr {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.contact__table input, .contact__table textarea {
+  max-width: 100%;
+  width: 300px;
+  height: 40px;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.contact__table .contact__textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+
+.submit-btn {
+  background: skyblue;
+  border-radius: 30px;
+  color: #fff;
+}
+
+/*--------------
+main
+--------------*/
+.main {
+  width: 100%;
+}
+
+/*--------------
+sidebar
+--------------*/
+.sidebar {
+  display: none;
+}

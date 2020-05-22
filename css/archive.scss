@@ -1,0 +1,16 @@
+@import "media.scss";
+
+/*--------------
+archive
+--------------*/
+.archive__list {
+  li {
+    margin: 1em 0;
+    border-bottom: solid 1px #D9D2D2;
+    font-size: 2.4rem;
+    transition: .6s;
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

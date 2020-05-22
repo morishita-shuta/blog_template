@@ -1,0 +1,59 @@
+@import "media.scss";
+
+/*--------------
+menu
+--------------*/
+.sp-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background: #fff;
+  width: 80%;
+  height: 100%;
+  transform: translateX(100%);
+  transition: .6s;
+  @include sp {
+    width: 100%;
+  }
+  &--open {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.sp-menu-nav {
+  ul {
+    text-align: center;
+  }
+  li {
+    font-size: 2.4rem;
+    margin: 1em;
+  }
+  a{
+    transition: .6s;
+    &:hover {
+      color: #fff;
+      opacity: .5;
+    }
+  }
+}
+
+.full-overlay {
+  display: none;
+  &--open {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+  }
+}

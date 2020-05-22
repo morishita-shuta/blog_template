@@ -1,0 +1,17 @@
+@import "media.scss";
+
+/* sidebar */
+.sidebar {
+  width: 25%;
+  padding: 2em 1em;
+  @include tab {
+    display: none;
+  }
+}
+ .sidebar__item {
+   margin-bottom: 4em;
+ }
+ .sidebar__item-ttl {
+   border-bottom: solid 1px #000;
+   margin-bottom: 1em;
+ }

@@ -1,0 +1,15 @@
+@import "media.scss";
+
+/*--------------
+btn
+--------------*/
+.btn {
+  display: block;
+  margin: auto;
+  padding: 0;
+  border: 0;
+  &--primary {
+    width: 180px;
+    height: 60px;
+  }
+}

@@ -1,0 +1,43 @@
+/*--------------
+cosmetic
+--------------*/
+.margin_auto {
+  margin: auto;
+}
+.margin_0 {
+  margin: 0;
+}
+.margin_S{
+  margin: 2rem auto;
+}
+.margin_M{
+  margin: 4rem auto;
+}
+.margin-top_0 {
+  margin-top: 0;
+}
+.margin-top_S {
+  margin-top: 2rem;
+}
+.margin-top_M {
+  margin-top: 4rem;
+}
+.margin-bottom_S {
+  margin-bottom: 2rem;
+}
+
+.font-size_16 {
+  font-size: 1.6rem
+}
+.font-size_24 {
+  font-size: 2.4rem
+}
+.font-size_32 {
+  font-size: 3.2rem
+}
+.font-size_48 {
+  font-size: 4.8rem
+}
+.font-size_64 {
+  font-size: 6.4rem
+}
